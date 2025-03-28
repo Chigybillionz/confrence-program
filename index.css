@@ -1,0 +1,436 @@
+/* body { */
+/* color: white; */
+/* background-image: url('assets/images/background-mobile.png'); */
+/* } */
+.ticketG {
+    animation: transitionIn 3s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transition: rotateX(-10deg);
+
+    }
+
+    to {
+        opacity: 8;
+        transition: rotateX(3);
+    }
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#topcardrightdesign img {
+    position: absolute;
+    right: -17px;
+    top: 10px;
+    transform: translate(-15%, -25px);
+    width: 130px;
+    height: 90px;
+}
+
+input {
+    border: 2px solid #ccc;
+    padding: 12px;
+    transition: all 0.5s ease-in-out;
+}
+
+input:focus {
+    border: 2px solid #007bff;
+    outline: none;
+    background-color: #f0f8ff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+
+}
+
+input:hover {
+    border-color: #ff6600;
+    background-color: #f9f9f9;
+}
+
+button:hover {
+    border-color: #b1061a;
+    background-color: #f9f9f9;
+    transform: scale(1.03);
+
+}
+
+p {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.centerupload {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 13%;
+    height: 60px;
+}
+
+#uploadconntainer {
+    background-color: transparent;
+    border-radius: 10px;
+    border-style: dashed;
+    text-align: center;
+    background-color: transparent;
+    height: 160px;
+    width: 100%;
+}
+
+#Drag p {
+    white-space: nowrap;
+    font-size: 100%;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.infoimage {
+    display: block;
+    margin-left: auto;
+    margin-top: -50px;
+}
+
+.infoimage.text {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+
+
+#uploadconntainer img {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    height: 70px;
+    width: 70px;
+    background-color: transparent;
+    box-shadow: transparent;
+    border-radius: 14px;
+    opacity: 0.8;
+    border-color: #fff;
+    border-style: ridge;
+}
+
+#preview {
+    position: relative;
+    top: 0;
+    left: 2px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+#submitlogodesign img {
+    position: absolute;
+    /* top: 910px; */
+    margin-top: -50px;
+    transform: translate(-15%, -25px);
+    width: 260px;
+    height: 140px;
+    z-index: -1;
+
+}
+
+.submittion {
+    width: 100%;
+    height: auto;
+    position: relative;
+    opacity: 100px;
+    right: 2px;
+}
+
+.submittion img {
+    width: 100%;
+    left: 20px;
+    right: 30px;
+
+}
+
+#preview {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 14px;
+    background-color: transparent;
+    margin-top: -70%;
+    z-index: 2px;
+}
+
+.ticketG {
+    /* this is to hide my ticket to show hiddden and appears whenever the js is implemented */
+    display: none;
+    opacity: 1;
+
+
+}
+
+.ticketG-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.toplogo h6 {
+    /* the ticket top contenet */
+    position: absolute;
+    left: -70px;
+    top: 29%;
+    color: white;
+    transform: translate(30%, -130%);
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-family: ' sans-serif';
+}
+
+.toplogo img {
+    /* the ticket top logo */
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+}
+
+.toplogo2 p {
+    /* the ticket top contenet  of the below content*/
+    position: absolute;
+    left: 41%;
+    top: 73%;
+    /* text-align: right; */
+    color: white;
+    transform: translate(-50%, -50%);
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.toplogo2 img {
+    /* the ticket top logo  of the below content*/
+    position: absolute;
+    left: 12%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    width: 11%;
+    border-radius: 7px;
+}
+
+.toplogousername {
+    /* the ticket top contenet  of the below content*/
+    position: absolute;
+    left: 166px;
+    top: 70%;
+    color: white;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.toplogousername img {
+    position: absolute;
+    top: 89%;
+    transform: translate(-50%, -50%);
+    width: 11%;
+}
+
+.topdesignlogo img {
+    position: absolute;
+    left: 60%;
+    top: 1%;
+    /* margin-top: -30px; */
+    transform: translate(-16%, -390px);
+    width: 40%;
+
+}
+
+.rotate {
+    left: 80px;
+    rotate: 90deg;
+    transform: translate(54px, -155px);
+    font-size: 23px;
+    font-family: 'Times New Roman', serif;
+    color: #fff;
+    opacity: 0.3;
+    filter: blur(0.2);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#backgroundCarddesign img {
+    padding-top: 120px;
+    bottom: 70px;
+    width: 80%;
+    padding-right: 60%;
+    right: 90px;
+}
+
+#backgroundPattern {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 50%;
+    transform: translate(-50%);
+    padding: 0;
+    margin: 0;
+}
+
+/* above is the ticket styling implementation */
+
+
+label {
+    display: block;
+    width: 200px;
+    background: none;
+    color: #fff;
+    padding: 12px;
+    margin: 10px auto;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+.uploadimage {
+    display: none;
+   
+}
+
+/* the above is for the uploading of the image and above info of the page  */
+
+.formview {
+    color: white;
+}
+
+.formview input {
+    box-sizing: border-box;
+    height: 40px;
+    border-radius: 12px;
+    width: 100%;
+    background-image: url(assets/images/background-mobile.png);
+    color: white
+}
+
+.formview button {
+    background-color: pink;
+    padding: 16px 32px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 12px;
+
+}
+
+h2 span {
+    color: palevioletred;
+}
+
+.submittion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h6 {
+    text-indent: 60px;
+    size-adjust: 90px;
+    padding-top: 0;
+
+}
+
+.State-error {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.date {
+    font-family: 'Times New Roman', serif;
+    color: #444;
+    opacity: 0.5;
+    filter: blur(0.1);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+#gitshow{
+    font-family: 'Times New Roman', serif;
+    color: #fff;
+    opacity: 0.5;
+    filter: blur(0.2);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+    
+#nameF{
+font-weight: 750;
+ font-size: 13px; 
+ font-family: 'Inter', sans-serif;
+ font-size: 13px;
+ 
+}
+
+#pics {
+    height: 42px;
+    width: 45px;
+    left: -36px;
+    top: -3px;
+    margin-top: 30px;
+    background-color: transparent;
+    box-shadow: transparent;
+    border-radius: 9px;
+    opacity: 0.8;
+    border-color: #fff;
+    position: absolute;
+}
+
+
+.box {
+    position: relative;
+    width: 300px;
+    height: 40%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    overflow: hidden;
+}
+
+
+
+.box::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 140%;
+    background-color: white;
+    box-shadow: 0 0 20px rgb(8, 8, 8);
+    animation: animate 5s linear infinite;
+    z-index: -2;
+}
+
+.box::after {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background-color: rgb(250, 180, 104);
+    border-radius: 19px;
+    z-index: -2;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
