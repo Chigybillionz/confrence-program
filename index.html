@@ -29,88 +29,108 @@
 </head>
 
 <body>
-
   <!-- Form starts -->
   <div id="MYFORM">
+    <div id="backgroungLine">
+      <img src="assets/images/pattern-lines.svg" style="position: fixed;
+    padding: 0;
+    margin: 0;
+    width: 50%px;
+    z-index: -1;">
+    </div>
+    <div id="backgroungCircle1">
+      <img src="assets/images/pattern-circle.svg" style="position: fixed;
+    padding: 0;
+    margin: 0;
+    width: 90px;
+    z-index: 1;">
+    </div>
     <div class="logo">
       <!-- this is for the top logo -->
       <img src="assets/images/logo-full.svg" alt="top logo" style="align-items: center;">
     </div>
     <div id="topcardrightdesign">
       <img src="assets/images/pattern-squiggly-line-top.svg" alt="">
-
     </div>
     <h2>Your Journey to Coding <br> Conf 2025 Starts Here!</h2>
-    <p>Secure your spot at next year's <br> biggest coding conference.
-    <p>
-
+    <p>Secure your spot at next year's <br> biggest coding conference.</p>
     <h5>Upload Avatar </h5>
-    <div id="uploadconntainer">
-      <img src="assets/images/icon-upload.svg" id="profile-Pic">
-
-    </div>
     <div id="Drag">
-      <label for="input-file">
-        <p>Drag and drop or click to upload</p>
-        <input type="file" accept="image/jpg,image/png, image/jpeg" id="input-file" class="uploadImage"
-          style="display: none;">
-        <img id="preview" src="" alt="images" style="display: none; ">
+      <img id="preview" src="" alt="images " style="display: none">
+      <label for="input-file" class="avatar-input">
+        <div id="uploadconntainer">
+          <img src="assets/images/icon-upload.svg" id="profile-Pic">
+          <div class="paragraph">Drag and drop or click to upload</div>
+          <input type="file" accept="image/jpg,image/png, image/jpeg" id="input-file" class="uploadImage"
+            style="display: none;">
+          <img id="preview" src="" alt="images " style="display: none;">
+          <div id="buttons"
+            style=" margin-left: 10px; display: flex;  gap: 10px; white-space: nowrap; margin-top: 20px; background-color: transparent; display: none;">
+            <button id="removeBtn" onclick="showuserI()"
+              style="border-radius: 9px; width: auto; height: 40px; text-align: center; background-color: transparent; color: #fff;">Remove
+              image</button>
+            <button id="changeBtn" onclick="showuserI()"
+              style="border-radius: 9px; width: auto; height: 40px; text-align: center; background-color: transparent;  color: #fff;">Change
+              image</button>
+          </div>
       </label>
     </div>
-<!-- 
-    <div class="upload-container">
-      <input type="file" id="imageInput" accept="image/jpeg, image/png" >
-      <div id="dropZone">
-          <label for="imageInput" id="uploadBox" style="display: none;">
-             <p>Drag and drop or click to upload</p> -->
-          <!-- </label>
-      </div>
-      <div id="previewContainer" style="display: none;">
-          <img id="previewImage" src="" alt="Uploaded Image">
-          <button id="removeImage" style="color: red;">Remove image</button>
-          <button id="changeImage">Change image</button>
-      </div>
-  </div> --> 
-    <br>
-    <div class="infoimage"> <img src="assets/images/icon-info.svg" alt="" id="img2"> <span class="text"
-        style="font-size: 13px;"> </span> <span id="uploadText"> Upload your photo (JPG or PNG, max size:
-        500KB). </span></div>
+  </div>
+  <div class="infoimage" style="position: relative">
+    <img src="assets/images/icon-info.svg" alt="" id="img2"> <span class="text" style="font-size: 13px;"> </span> <span
+      id="uploadText"> Upload your photo (JPG or PNG, max size:
+      500KB). </span>
+  </div>
 
-    <!-- first form -->
-    <div class="form-container">
-      <form action="null" id="myForm">
-        <div class="formview">
-          <label for="name"></label>
-          <div class="input-control">
-            Full Name
-            <input type="text" name="fname" id="username" placeholder="Okorie Chigozie Jehoshaphat"o> <br>
-            <span class="error" id="nameError" style="color: red;"></span>
-            <label for="email"></label>
-          </div>
-          <div class="input-control">
-            Email Address <br>
-            <input type="email" placeholder="chigozie@email.com" name="femail" id="email"><br>
-            <span class="error" id="emailError" style="color: red;"></span>
 
-            <label for="email"></label>
+
+  <!-- first form -->
+  <div class="form-container">
+    <form action="null" id="myForm">
+      <div class="formview">
+        <label for="name"></label>
+        <div class="input-control">
+          Full Name
+          <input type="text" name="fname" id="username" placeholder="Okorie Chigozie Jehoshaphat" o> <br>
+          <div id="backgroungCircle2">
+            <img src="assets/images/pattern-circle.svg" style="position: fixed;
+            margin: 0;
+            width: 85px;
+            right: 0;
+            left: 340px;
+            top: 500px;
+            z-index: -1;
+            opacity: 0.9px;
+            
+            ">
           </div>
-          <div class="input-control">
-            GitHub Username <br>
-            <input type="text" placeholder="@Yourusername" name="fgithub" id="github"> <br>
-            <span class="error" id="githubError" style="color: red;"></span>
-          </div> <br>
-          <div class="input-control">
-            <a href="#">
-              <button type="submit" id="submit" class="box"> Generate My Ticket
-              </button>
-            </a>
-          </div>
-          <div id="submitlogodesign">
-            <img src="assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg" alt="">
-          </div>
+          <span class="error" id="nameError" style="color: red;"></span>
+          <label for="email"></label>
         </div>
-      </form>
-    </div>
+        <div class="input-control">
+          Email Address <br>
+          <input type="email" placeholder="chigozie@email.com" name="femail" id="email"><br>
+          <span class="error" id="emailError" style="color: red;"></span>
+
+          <label for="email"></label>
+        </div>
+        <div class="input-control">
+          GitHub Username <br>
+          <input type="text" placeholder="@Yourusername" name="fgithub" id="github"> <br>
+          <span class="error" id="githubError" style="color: red;"></span>
+        </div> <br>
+        <div class="input-control">
+          <a href="#">
+            <button type="submit" id="submit" class="box"> Generate My Ticket
+            </button>
+          </a>
+        </div>
+        <div id="submitlogodesign">
+          <img src="assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg" alt="">
+        </div>
+      </div>
+    </form>
+  </div>
   </div>
   <br> <br> <br>
   <!-- Form ends -->
@@ -119,13 +139,14 @@
   <!-- this below will be the form that will appear as congrats -->
   <!-- Generated tickets starts -->
 
-  <div class="ticketG" id="ticketG">
+  <div class="ticketG" id="ticketG" style="display: none;  position: absolute; ">
     <img src="assets/images/logo-full.svg" alt="ticket generate log" style="display: block; margin: auto; width: 50%;">
     <h2> <br>
       <p>Congrats, <span id="nameShow"><br> </span>!<br> Your ticket is <br> ready.</p>
     </h2>
 
-    <p style="line-height: 25px;">We've emailed your ticket to <br><span style="color: hsla(7, 60%, 67%, 0.849)" id="emailShow">
+    <p style="line-height: 25px;">We've emailed your ticket to <br><span style="color: hsla(7, 60%, 67%, 0.849)"
+        id="emailShow">
         <br></span> and will send
       <br>updates
       in the run up to the event.
@@ -141,25 +162,28 @@
       <div class="toplogo2">
         <!-- <span id="picture"></span> -->
         <!-- <img src="assets/images/image-avatar.jpg"> -->
-         <div id="picture">
-         <span id="picture"> <img id="picture" src=""> </span>
-         </div>
+        <div id="picture">
+          <span id="picture"> <img id="picture" src=""> </span>
+        </div>
 
         <p id="gitshow"><span id="gitshow"></span></p>
+        <img src="assets/images/icon-github.svg" id="gitt" alt="">
+        <p> <span id="nameF"></span> </p>
+
+
       </div>
       <div class="toplogousername">
         <img src="" id="pics">
-      </div>
-      <div>
-        <p> <span id="nameF"></span> </p>
-    </div>
-        <div>
-                <img src="assets/images/icon-github.svg" alt="">
 
       </div>
+      <!-- <div id="checkName"> -->
+      <!-- <p> <span id="nameF"></span> </p> -->
+      <!-- </div> -->
+
     </div>
     <div class="rotate" id="random">
-    <p>#</p></div>
+      <p>#</p>
+    </div>
 
     <div id="backgroundCarddesign">
       <!-- this is for the below background line design -->

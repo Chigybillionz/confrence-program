@@ -1,6 +1,7 @@
 document.body.style.backgroundImage =
   "url('assets/images/background-mobile.png')";
 document.body.style.color = "white";
+
 //to upload image from the gallery and the image must be less than 500kb
 document
   .getElementById("input-file")
@@ -23,33 +24,45 @@ document
       }
       const reader = new FileReader();
       reader.readAsDataURL(file);
-      reader.onload = function () {
-        localStorage.setItem("uploadImage", reader.result);
+      reader.onload = function (e) {
+        localStorage.setItem("uploadImage", e.target.result);
+        updatedProfile();
         console.log("image saved to local storgare");
         //TO SHOW THE PREVIEW
+
+        // it's a class instead to hide the drag and drop button immediately the change and remove button comes up
+        let dragTextClass = document.querySelector(".paragraph");
+        if (dragTextClass) {
+          dragTextClass.style.display = "none";
+        }
+
         const preview = document.getElementById("preview");
-        preview.src = reader.result;
-        preview.style.display = "block";
+        if (preview) {
+          preview.src = reader.result;
+          preview.style.display = "block";
+        }
+        const changeBtn = document.getElementById("changeBtn");
+        if (changeBtn) {
+          changeBtn.style.display = "inline-block";
+        }
+
+        const removeBtn = document.getElementById("removeBtn");
+        if (removeBtn) {
+          removeBtn.style.display = "inline-block";
+        }
       };
-      
     }
   });
-  // this is to get the image that was uploaded to save onn the succesful card
-  document.addEventListener("DOMContentLoaded", function(){
-    const storedImage = localStorage.getItem("uploadImage");
-    if(storedImage){
-      document.getElementById("pics").src = storedImage;
-      document.getElementById("pics").style.display ="block";
-    }
-  })
+// this is to get the image that was uploaded to save onn the succesful card
+function updatedProfile() {
+  const storedImage = localStorage.getItem("uploadImage");
 
-  // document.addEventListener("DOMContentLoaded", function(){
-  //   const storedImage = localStorage.getItem("uploadImage");
-  //   if(storedImage){
-  //     document.getElementById("preview").src = storedImage
-  //     document.getElementById("picture").src= storedImage;
-  //   }
-  // })
+  if (storedImage) {
+    document.getElementById("pics").src = storedImage;
+    document.getElementById("pics").style.display = "block";
+  }
+}
+window.addEventListener("DOMContentLoaded", updatedProfile);
 
 // form validation
 document.getElementById("MYFORM").addEventListener("submit", function (event) {
@@ -105,8 +118,7 @@ document.getElementById("MYFORM").addEventListener("submit", function (event) {
       " Upload your photo (JPG or PNG, max size: 500KB).";
     document.getElementById("uploadText").style.color = "white";
   }
-  
-  
+
   if (valid) {
     document.getElementById("ticketG").style.display = "block";
     this.style.display = "none";
@@ -146,76 +158,33 @@ function fun1() {
   let randomvalue = Math.floor(Math.random() * 900000);
   gerationofrandomno.innerHTML = `#${randomvalue}`;
   document.getElementById("date").innerHTML = formatedate;
-  
-  // document.getElementById("submit").addEventListener("click", function(){
-  //   const storedImage = localStorage.getItem("uploadImage");
-  //   if(storedImage){
-  //     document.getElementById("picture").src= storedImage;
-  //   }
-  // })
-
-
 }
 btn1.addEventListener("click", fun1);
 
+document
+  .getElementById("input-file")
+  .addEventListener("change", function (event) {
+    let file = event.target.files[0];
+    if (file) {
+      let reader = new FileReader();
+      reader.onload = function (e) {
+        document.getElementById("preview").src = e.target.result;
+        document.getElementById("preview").style.display = "block";
+        document.getElementById("buttons").style.display = "block";
+      };
+      reader.readAsDataURL(file);
+    }
+  });
 
+//to remove
+document.getElementById("removeBtn").addEventListener("click", function () {
+  document.getElementById("preview").src = "";
+  document.getElementById("preview").style.display = "none";
+  document.getElementById("input-file").value = "";
+  document.getElementById("buttons").style.display = "none";
+});
 
-// const imageInput = document.getElementById("imageInpu");
-// const dropZone = document.getElementById("dropZone");
-// const uploadBox = document.getElementById("uploadBox");
-// const previewContainer = document.getElementById("previewContainer");
-// const previewImage = document.getElementById("previewImage");
-// const removeImage = document.getElementById("removeImage");
-// const changeImage = document.getElementById("changeImage");
-
-
-//     // Function to handle image upload
-// function handleImageUpload(file) {
-//   if (!file || !file.type.startsWith("image/")) return;
-  
-//   const reader = new FileReader();
-//   reader.onload = function (e) {
-//       previewImage.src = e.target.result;
-//       dropZone.style.display = "none";
-//       previewContainer.style.display = "block";
-//   };
-//   reader.readAsDataURL(file);
-// }
-
-// // Handle input file change
-// imageInput.addEventListener("change", function () {
-//   handleImageUpload(this.files[0]);
-// });
-
-// // Drag and Drop Functionality
-// dropZone.addEventListener("dragover", function (e) {
-//   e.preventDefault();
-//   dropZone.style.borderColor = "#000";
-// });
-
-// dropZone.addEventListener("dragleave", function () {
-//   dropZone.style.borderColor = "#ccc";
-// });
-
-// dropZone.addEventListener("drop", function (e) {
-//   e.preventDefault();
-//   dropZone.style.borderColor = "#ccc";
-//   handleImageUpload(e.dataTransfer.files[0]);
-// });
-
-// // Remove Image
-// removeImage.addEventListener("click", function () {
-//   previewContainer.style.display = "none";
-//   dropZone.style.display = "block";
-//   imageInput.value = ""; // Clear file input
-// });
-
-// // Change Image
-// changeImage.addEventListener("click", function () {
-//   imageInput.click(); // Trigger file selection
-// });
-
-
-
-
-
+//chnage picture
+document.getElementById("changeBtn").addEventListener("click", function () {
+  document.getElementById("input-file").click();
+});
