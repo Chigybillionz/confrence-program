@@ -64,7 +64,6 @@ h2 {
 }
 
 .centerupload {
-    /* display: block; */
     margin-left: auto;
     margin-right: auto;
     width: 13%;
@@ -235,7 +234,7 @@ h2 {
 .rotate {
     rotate: 90deg;
     margin-left: 80px;
-    margin-top: -51px;
+    margin-top: -41px;
     transform: translate(54px, -155px);
     font-size: 23px;
     font-family: 'Times New Roman', serif;
@@ -249,8 +248,8 @@ h2 {
     padding-top: 120px;
     bottom: 70px;
     width: 80%;
-    padding-right: 60%;
-    right: 90px;
+    /* padding-right: 60%; */
+    right: 10px;
 }
 
 #backgroundPattern {
@@ -259,7 +258,7 @@ h2 {
     padding: 0;
     object-fit: cover;
     margin: 0;
-    width: 100%
+    width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -386,6 +385,18 @@ h6 {
     top: 360px;
     left: 200px;
     transform: translate(-50%, -50%);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+#removeBtn:hover{
+    text-decoration: underline;
+
+}
+#changeBtn:hover{
+    text-decoration: underline;
+
+
 }
 
 .box {

@@ -182,7 +182,10 @@ document.getElementById("removeBtn").addEventListener("click", function () {
   document.getElementById("preview").style.display = "none";
   document.getElementById("input-file").value = "";
   document.getElementById("buttons").style.display = "none";
+  document.querySelector(".paragraph").style.display = "block";
+
 });
+
 
 //chnage picture
 document.getElementById("changeBtn").addEventListener("click", function () {
