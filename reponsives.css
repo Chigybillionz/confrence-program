@@ -1,0 +1,162 @@
+/* Desktop responsiveness for screens larger than 1024px */
+@media (min-width: 1024px) {
+  .ticketG {
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+      padding: 40px;
+  }
+
+  .logo {
+      justify-content: flex-start;
+      margin-left: 20px;
+  }
+
+  #topcardrightdesign img {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      transform: none;
+      height: 120px;
+  }
+
+  input {
+      width: 50%;
+      font-size: 16px;
+      margin: 10px auto;
+  }
+
+  .centerupload {
+      width: 20%;
+      height: auto;
+  }
+
+  #uploadconntainer {
+      height: 200px;
+      width: 60%;
+      margin: 20px auto;
+  }
+
+  #uploadconntainer img {
+      height: 100px;
+      width: 100px;
+  }
+
+  .paragraph {
+      font-size: 16px;
+  }
+
+  .infoimage {
+      margin-top: 20px;
+  }
+
+  #submitlogodesign img {
+      width: 300px;
+      height: auto;
+      margin-top: -30px;
+  }
+
+  .submittion {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 0;
+      align-items: center;
+  }
+
+  .submittion img {
+      width: 50%;
+  }
+
+  #preview {
+      margin-left: 0;
+      width: 100px;
+      height: 100px;
+      margin-top: 20px;
+  }
+
+  .toplogo h6 {
+      font-size: 14px;
+      left: 0;
+      transform: none;
+  }
+
+  .toplogo img {
+      width: 30%;
+      left: 0;
+      transform: none;
+  }
+
+  .toplogo2 p {
+      font-size: 14px;
+      left: 0;
+      transform: none;
+  }
+
+  .toplogo2 img {
+      width: 15%;
+      left: 0;
+      transform: none;
+  }
+
+  .toplogousername {
+      font-size: 14px;
+      left: 0;
+      transform: none;
+  }
+
+  .toplogousername img {
+      width: 15%;
+      top: 0;
+      transform: none;
+  }
+
+  .topdesignlogo img {
+      width: 30%;
+      left: 0;
+      transform: none;
+  }
+
+  .rotate {
+      font-size: 28px;
+      margin-left: 0;
+      margin-top: 0;
+      transform: none;
+  }
+
+  #backgroundCarddesign img {
+      width: 60%;
+      padding-top: 50px;
+  }
+
+  #backgroundPattern {
+      width: 100%;
+  }
+
+  label {
+      width: 50%;
+      font-size: 16px;
+  }
+
+  .formview input {
+      font-size: 16px;
+  }
+
+  .formview button {
+      font-size: 16px;
+      padding: 12px 24px;
+  }
+
+  h2 {
+      font-size: 2rem;
+  }
+
+  p {
+      font-size: 1.2rem;
+  }
+
+  .box {
+      width: 60%;
+      height: auto;
+      margin: 20px auto;
+  }
+}

@@ -24,10 +24,9 @@
 
 #topcardrightdesign img {
     position: absolute;
-    right: -17px;
-    top: 10px;
+    right: 7px;
+    top: 40px;
     transform: translate(-15%, -25px);
-    width: 130px;
     height: 90px;
 }
 
@@ -83,10 +82,12 @@ h2 {
     border-style: dashed;
     text-align: center;
     height: 170px;
+    align-items: center;
     width: 100%;
     margin: auto;
     margin-left: -15px;
     display: block;
+    justify-content: center;
 }
 
 .paragraph {
@@ -130,7 +131,7 @@ h2 {
 }
 
 .submittion {
-    /* position: fixed; */
+    position: fixed;
     display: flex;
     width: 100%;
     height: auto;
@@ -439,4 +440,76 @@ h6 {
     100% {
         transform: rotate(360deg);
     }
+}
+@media (max-width:768px){
+body{
+    padding: 10px;
+    font-size: 14px;
+}
+#MYFORM {
+    padding: 20px;
+  }
+  .logo img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #topcardrightdesign img {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    transform: none;
+    height: 60px;
+    margin: 10px auto;
+  }
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    text-align: center;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  #Drag {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .toplogo2 img {
+    /* width: 15%; */
+    margin-top: 20px;
+    position: relative;
+  }
+  button#submit {
+    padding-top: 20px;
+    font-size: 1rem;
+  }
+  .ticketG {
+    padding: 20px;
+    text-align: center;
+    margin-left: 3px
+  }
+  .ticketG img {
+    margin: 0 auto;
+  }
+  .rotate {
+    font-size: 1.2rem;
+    margin-top: -180px;
+    margin-left: 140px;
+  }
+  #backgroundCarddesign img {
+    margin-top: 166px
+  }
+  .topdesignlogo img{
+/* position: relative; */
+margin-top:20px;
+margin-right: 302px
+  }
+  footer {
+    background-size: cover;
+    padding: 20px;
+  }
+ 
+  
+
 }
