@@ -1,3 +1,4 @@
+
 .ticketG {
     animation: transitionIn 3s;
     width: 100%;
@@ -149,7 +150,7 @@ h2 {
 #preview {
     position: absolute;
     display: block;
-    margin-left: 160px;
+    margin-left: 287px;
     width: 70px;
     height: 70px;
     border-radius: 14px;
@@ -383,8 +384,8 @@ h6 {
 
 #buttons {
     position: absolute;
-    top: 360px;
-    left: 200px;
+    top: 570px;
+    left: 350px;
     transform: translate(-50%, -50%);
     text-decoration: none;
     cursor: pointer;
@@ -441,7 +442,8 @@ h6 {
         transform: rotate(360deg);
     }
 }
-@media (max-width:768px){
+@media (min-width: 720px){
+ /* @media (max-width:720px){ */
 body{
     padding: 10px;
     font-size: 14px;
@@ -450,20 +452,19 @@ body{
     padding: 20px;
   }
   .logo img {
-    width: 80%;
     margin: 0 auto;
   }
   #topcardrightdesign img {
     position: absolute;
-    right: 0;
-    top: 50px;
+    right: 40px;
+    top: 30px;
     transform: none;
-    height: 60px;
+    height: 70px;
     margin: 10px auto;
+    
   }
   h2 {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 3.5rem;
     text-align: center;
   }
   p {
@@ -476,7 +477,6 @@ body{
     margin: 20px auto;
   }
   .toplogo2 img {
-    /* width: 15%; */
     margin-top: 20px;
     position: relative;
   }
@@ -501,7 +501,6 @@ body{
     margin-top: 166px
   }
   .topdesignlogo img{
-/* position: relative; */
 margin-top:20px;
 margin-right: 302px
   }
@@ -509,7 +508,4 @@ margin-right: 302px
     background-size: cover;
     padding: 20px;
   }
- 
-  
-
-}
+} 

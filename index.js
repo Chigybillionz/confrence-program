@@ -191,3 +191,4 @@ document.getElementById("removeBtn").addEventListener("click", function () {
 document.getElementById("changeBtn").addEventListener("click", function () {
   document.getElementById("input-file").click();
 });
+
