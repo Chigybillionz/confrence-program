@@ -150,7 +150,7 @@ h2 {
 #preview {
     position: absolute;
     display: block;
-    margin-left: 167px;
+    margin-left: 107px;
     width: 70px;
     height: 70px;
     border-radius: 14px;
@@ -384,8 +384,8 @@ h6 {
 
 #buttons {
     position: absolute;
-    top: 450px;
-    left: 230px;
+    top: 400px;
+    left: 170px;
     transform: translate(-50%, -50%);
     text-decoration: none;
     cursor: pointer;
@@ -456,7 +456,8 @@ body{
   }
   #topcardrightdesign img {
     position: absolute;
-    right: 10px;
+    /* right: 3px; */
+    left: 220px;
     top: 9px;
     transform: none;
     height: 70px;
@@ -464,7 +465,7 @@ body{
     
   }
   h2 {
-    font-size: 2.3rem;
+    font-size: 1.6rem;
     text-align: center;
   }
   p {
