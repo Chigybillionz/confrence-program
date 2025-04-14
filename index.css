@@ -442,7 +442,7 @@ h6 {
         transform: rotate(360deg);
     }
 }
-@media (min-width: 480px){
+@media (max-width: 480px){
  /* @media (max-width:720px){ */
 body{
     padding: 10px;
